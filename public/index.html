@@ -4,67 +4,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas 4</title>
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="flex w-full px-10 py-4 bg-white shadow-lg items-center">
         <h1>
-            Tugas 4
+            <img src="./assets/image/TUGAS4.svg" class="h-5" alt="gambar">
         </h1>
-        <ul>
+        <ul class="flex ml-auto space-x-5">
             <li>
                <a href="#">Home</a>
+               <div class="nav-underline"></div>
             </li>
             <li>
                 <a href="#">HTML</a>
+                <div class="nav-underline"></div>
             </li>
             <li>
                 <a href="#">CSS</a>
+                <div class="nav-underline"></div>
             </li>
             <li>
                 <a href="#">JavaScript</a>
+                <div class="nav-underline"></div>
             </li>
         </ul>
     </header>
-        <div>
-        <h2>MST</h2>
-        <h2>BOOTCAMP</h2>
-        <img src="" />
-        <h2>Filda Fajriati</h2>
-        <h3>Developer React</h3>
-        <table>
-            <tr>
-                <th>Tempat/Tanggal Lahir</th>
-                <th>:</th>
-                <th>Bandung, 01 November 1997</th>
-            </tr>
-            <tr>
-                <th>Jenis Kelamin</th>
-                <th>:</th>
-                <th>Perempuan</th>
-            </tr>
-            <tr>
-                <th>Alamat</th>
-                <th>:</th>
-                <th>Jl. Jatinegara Rt : 09 Rw : 02</th>
-            </tr>
-            <tr>
-                <th>Status</th>
-                <th>:</th>
-                <th>Married with Cha Eunwoo</th>
-            </tr>
-            <tr>
-                <th>Pekerjaan</th>
-                <th>:</th>
-                <th>Developer React</th>
-            </tr>
-            <tr>
-                <th>Kewarganegaraan</th>
-                <th>:</th>
-                <th>Korea</th>
-            </tr>
-        </table>
-        <h5>www.mstbootcamp.co.id</h5>
-        </div>
+    <main>
+        <section class="w-full min-h-screen grid grid-cols-3 px-20 items-center gap-5">
+            <div class="w-full border relative rounded-2xl overflow-hidden shadow-lg">
+                <img src="./assets/image/card-bg.png" alt="">
+                <div class="absolute inset-0 p-8 flex flex-col items-center space-y-10">
+                    <h2><img src="./assets/image/logo.png" class="w-32" alt=""></h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Cha_Eun-woo_in_2018_Korea_Drama_Awards.jpg" class="h-40 w-40 rounded-full " />
+                    <div class="flex flex-col items-center">
+                        <div class="flex flex-col items-center mb-6">
+                            <h2 class="text-4xl font-light text-blue-900">Filda Fajriati</h2>
+                            <h3 class="text-xl font-bold">Developer React</h3>
+                        </div>
+                        <table class="text-xs mb-4">
+                            <tr class="">
+                                <th class="text-right text-blue-900">Tempat/Tanggal Lahir</th>
+                                <th class="px-2">:</th>
+                                <th class="text-left">Bandung, 01 November 1997</th>
+                            </tr>
+                            <tr>
+                                <th class="text-right text-blue-900">Jenis Kelamin</th>
+                                <th class="px-2">:</th>
+                                <th class="text-left">Perempuan</th>
+                            </tr>
+                            <tr>
+                                <th class="text-right text-blue-900">Alamat</th>
+                                <th class="px-2">:</th>
+                                <th class="text-left">Jl. Jatinegara Rt : 09 Rw : 02</th>
+                            </tr>
+                            <tr>
+                                <th class="text-right text-blue-900">Status</th>
+                                <th class="px-2">:</th>
+                                <th class="text-left">Married with Cha Eunwoo</th>
+                            </tr>
+                            <tr>
+                                <th class="text-right text-blue-900">Pekerjaan</th>
+                                <th class="px-2">:</th>
+                                <th class="text-left">Developer React</th>
+                            </tr>
+                            <tr>
+                                <th class="text-right text-blue-900">Kewarganegaraan</th>
+                                <th class="px-2">:</th>
+                                <th class="text-left">Korea</th>
+                            </tr>
+                        </table>
+                        <h5 class="text-blue-900 font-semibold">www.mstbootcamp.co.id</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        
         <div>
             <h2>MST</h2>
             <h2>BOOTCAMP</h2>
@@ -74,32 +91,32 @@
             <table>
                 <tr>
                     <th>Tempat/Tanggal Lahir</th>
-                    <th>:</th>
+                    <th class="px-2">:</th>
                     <th>Bandung, 14 April 2002</th>
                 </tr>
                 <tr>
                     <th>Jenis Kelamin</th>
-                    <th>:</th>
+                    <th class="px-2">:</th>
                     <th>Laki - Laki</th>
                 </tr>
                 <tr>
                     <th>Alamat</th>
-                    <th>:</th>
+                    <th class="px-2">:</th>
                     <th>Jl. Babakan Ciparay No. 05</th>
                 </tr>
                 <tr>
                     <th>Status</th>
-                    <th>:</th>
+                    <th class="px-2">:</th>
                     <th>Jomblo</th>
                 </tr>
                 <tr>
                     <th>Pekerjaan</th>
-                    <th>:</th>
+                    <th class="px-2">:</th>
                     <th>Developer React</th>
                 </tr>
                 <tr>
                     <th>Kewarganegaraan</th>
-                    <th>:</th>
+                    <th class="px-2">:</th>
                     <th>Indonesia</th>
                 </tr>
             </table>
@@ -114,32 +131,32 @@
         <table>
             <tr>
                 <th>Tempat/Tanggal Lahir</th>
-                <th>:</th>
+                <th class="px-2">:</th>
                 <th>Bandung, 17 Maret 1994</th>
             </tr>
             <tr>
                 <th>Jenis Kelamin</th>
-                <th>:</th>
+                <th class="px-2">:</th>
                 <th>Laki - Laki</th>
             </tr>
             <tr>
                 <th>Alamat</th>
-                <th>:</th>
+                <th class="px-2">:</th>
                 <th>Jl. Sukajadi No. 192</th>
             </tr>
             <tr>
                 <th>Status</th>
-                <th>:</th>
+                <th class="px-2">:</th>
                 <th>Jomblo</th>
             </tr>
             <tr>
                 <th>Pekerjaan</th>
-                <th>:</th>
+                <th class="px-2">:</th>
                 <th>Developer React</th>
             </tr>
             <tr>
                 <th>Kewarganegaraan</th>
-                <th>:</th>
+                <th class="px-2">:</th>
                 <th>Indonesia</th>
             </tr>
         </table>

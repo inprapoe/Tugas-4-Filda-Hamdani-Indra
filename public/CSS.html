@@ -3,18 +3,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Html</title>
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <div>
-        <h2>What Is CSS?</h2>
-        <img src="" /> 
-        <p>CSS is what’s called a Cascading Style Sheet language, and is used to stylize elements written in a markup language such as HTML. It separates the content from the visual representation of the site.
-            CSS was developed by W3C (World Wide Web Consortium) in 1996, for a rather simple reason. HTML was not designed to have tags that would help format the page. You were only supposed to write the markup for the site.
-            Tags like <font> were introduced in HTML version 3.2, and it caused quite a lot of troubles for developers. Since websites had different fonts, colored backgrounds, and styles, it was a long, painful, and expensive process to rewrite the code. Thus, CSS was created by W3C to solve this problem.
-            The relation between HTML and CSS is strongly tied together. Since HTML is a markup language (the very foundation of a site) and CSS emphasizes style (all of the aesthetics of a website), they go hand in hand together.
-            CSS is not technically a necessity, but you probably wouldn’t want to look at a site that features only HTML as it would look completely bare-boned.
-        </p>
-    </div> 
+    <header>
+        <h1>
+            <img src="./assets/image/TUGAS4.svg" class="h-5" alt="gambar">
+        </h1>
+        <span onclick="toggleNav()" class="ml-auto text-blue-900 transition duration-300 cursor-pointer md:hidden hover:text-yellow-600" >
+            <svg class="w-8 fill-current" width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="36" height="2" fill="#025196"/>
+                <rect y="10" width="36" height="2" fill="#025196"/>
+                <rect y="20" width="36" height="2" fill="#025196"/>
+            </svg>
+        </span>
+        <ul id='navLists' class="fixed left-0 flex-col hidden w-full px-10 py-5 space-y-6 bg-white border-t shadow-lg s md:w-auto md:static md:px-0 hadow-lg md:shadow-none md:border-none md:flex-row md:space-y-0 top-20 md:flex md:ml-auto md:space-x-5">
+            <li>
+               <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="nav-link" href="./HTML.html">HTML</a>
+            </li>
+            <li>
+                <a class="nav-link" href="./CSS.html">CSS</a>
+            </li>
+            <li>
+                <a class="nav-link" href="./JavaScript.html">JavaScript</a>
+            </li>
+        </ul>
+    </header>
+    <main class="w-full max-w-2xl min-h-screen px-5 py-10 mx-auto mt-20">
+        <div class="mx-auto text-4xl text-blue-900 pb-7">
+            <h2>What Is CSS?</h2>
+        </div>
+        <div>
+            <img src="./assets/image/image 5-1.png" class="mx-auto" />
+        </div> 
+        <div class="pt-6 mx-auto space-y-4 text-lg break-all">
+            <p>
+                CSS is what’s called a Cascading Style Sheet language, and is used to stylize elements written in a markup language such as HTML. It separates the content from the visual representation of the site.
+            </p>
+            <p>
+                CSS was developed by W3C (World Wide Web Consortium) in 1996, for a rather simple reason. HTML was not designed to have tags that would help format the page. You were only supposed to write the markup for the site.            </p>
+            <p>
+                Tags like font were introduced in HTML version 3.2, and it caused quite a lot of troubles for developers. Since websites had different fonts, colored backgrounds, and styles, it was a long, painful, and expensive process to rewrite the code. Thus, CSS was created by W3C to solve this problem.
+            </p>
+            <p>
+                The relation between HTML and CSS is strongly tied together. Since HTML is a markup language (the very foundation of a site) and CSS emphasizes style (all of the aesthetics of a website), they go hand in hand together.
+            </p>
+            <p>
+                CSS is not technically a necessity, but you probably wouldn’t want to look at a site that features only HTML as it would look completely bare-boned.            
+            </p>
+        </div>
+    </main> 
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
